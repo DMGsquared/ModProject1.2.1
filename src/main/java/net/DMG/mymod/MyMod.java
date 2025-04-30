@@ -1,6 +1,7 @@
 package net.DMG.mymod;
 
 import com.mojang.logging.LogUtils;
+import net.DMG.mymod.block.ModBlocks;
 import net.DMG.mymod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -41,6 +42,7 @@ public class MyMod
         MinecraftForge.EVENT_BUS.register(this);
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         // Register the item to a creative tab
         modEventBus.addListener(this::addCreative);
@@ -51,25 +53,21 @@ public class MyMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
-        // Some common setup code
-       //LOGGER.info("HELLO FROM COMMON SETUP");
 
-      //if (Config.logDirtBlock)
-        //  LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
-
-       //LOGGER.info(Config.magicNumberIntroduction + Config.magicNumber);
-
-       //Config.items.forEach((item) -> LOGGER.info("ITEM >> {}", item.toString()));
     }
 
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
 
-        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS)
+        if (event.getTabKey() == CreativeModeTabs.INGREDIENTS) {
             event.accept(ModItems.OPTIMONIUM);
-       // if (event.getTabKey() == CreativeModeTabs.COMBAT)
-           // event.accept(ModItems.BIGOHDIH);
+            event.accept(ModItems.UNREFINED_OPTIMONIUM);
+        }
+        if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
+            event.accept(ModBlocks.OPTIMONIUM_BLOCK);
+         //   event.accept(ModBlocks.UNREFINED_OPTIMONIUM_BLOCK);
+        }
 
     }
 

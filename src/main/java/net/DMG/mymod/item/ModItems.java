@@ -12,6 +12,7 @@ public class ModItems {
             DeferredRegister.create(ForgeRegistries.ITEMS, MyMod.MOD_ID);
 
     public static final RegistryObject<Item> OPTIMONIUM = ITEMS.register("optimonium", () -> new Item(new Item.Properties()));
+    public static final RegistryObject<Item> UNREFINED_OPTIMONIUM = ITEMS.register("unrefined_optimonium", ()-> new Item(new Item.Properties()));
 
     //public static final RegistryObject<Item> BIGOHDIH = ITEMS.register("bigohdih", () -> new Item(new Item.Properties()));
 
