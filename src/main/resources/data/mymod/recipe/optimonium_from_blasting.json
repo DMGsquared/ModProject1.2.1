@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 50,
+  "experience": 1.0,
+  "ingredient": {
+    "item": "mymod:unrefined_optimonium"
+  },
+  "result": {
+    "id": "mymod:optimonium"
+  }
+}
