@@ -2,6 +2,7 @@ package net.DMG.mymod;
 
 import com.mojang.logging.LogUtils;
 import net.DMG.mymod.block.ModBlocks;
+import net.DMG.mymod.item.ModCreativeModeTabs;
 import net.DMG.mymod.item.ModItems;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -41,6 +42,7 @@ public class MyMod
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);
 
@@ -54,8 +56,8 @@ public class MyMod
     private void commonSetup(final FMLCommonSetupEvent event)
     {
 
-    }
 
+    }
     // Add the example block item to the building blocks tab
     private void addCreative(BuildCreativeModeTabContentsEvent event)
     {
@@ -66,7 +68,7 @@ public class MyMod
         }
         if (event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS){
             event.accept(ModBlocks.OPTIMONIUM_BLOCK);
-         //   event.accept(ModBlocks.UNREFINED_OPTIMONIUM_BLOCK);
+            event.accept(ModBlocks.UNREFINED_OPTIMONIUM_BLOCK);
         }
 
     }

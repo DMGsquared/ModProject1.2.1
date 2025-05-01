@@ -24,8 +24,8 @@ public class ModBlocks {
             .destroyTime(10f).strength(4f).requiresCorrectToolForDrops().explosionResistance(1200f)
             .sound(SoundType.ANCIENT_DEBRIS)));
 
-  //  public static final RegistryObject<Block> UNREFINED_OPTIMONIUM_BLOCK = registerBlock("optimonium_block", () -> new Block(BlockBehaviour.Properties.of()
-   //         .sound(SoundType.BONE_BLOCK)));
+    public static final RegistryObject<Block> UNREFINED_OPTIMONIUM_BLOCK = registerBlock("unrefined_optimonium_block", () -> new Block(BlockBehaviour.Properties.of()
+           .sound(SoundType.BONE_BLOCK)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

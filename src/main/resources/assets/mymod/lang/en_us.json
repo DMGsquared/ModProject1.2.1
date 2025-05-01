@@ -2,5 +2,7 @@
   "item.mymod.optimonium": "Optimonium",
   "item.mymod.bigohdih": "Big Oh Dih",
   "block.mymod.optimonium_block": "Optimonium Block",
-  "item.mymod.unrefined_optimonium": "Unrefined Optimonium"
+  "block.mymod.unrefined_optimonium_block": "Unrefined Optimonium Block",
+  "item.mymod.unrefined_optimonium": "Unrefined Optimonium",
+  "creative.mymod.my_mod": "Mod Items"
 }
