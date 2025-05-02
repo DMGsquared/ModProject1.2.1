@@ -1,0 +1,9 @@
+{
+  "replace": false,
+  "values": [
+    "mymod:optimonium_block",
+    "mymod:unrefined_optimonium_block",
+    "mymod:optimonium_ore",
+    "mymod:deepslate_optimonium_ore"
+  ]
+}

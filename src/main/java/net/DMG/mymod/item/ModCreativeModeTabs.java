@@ -22,6 +22,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModItems.OPTIMONIUM.get());
                 output.accept(ModBlocks.UNREFINED_OPTIMONIUM_BLOCK.get());
                 output.accept(ModBlocks.OPTIMONIUM_BLOCK.get());
+                output.accept(ModBlocks.OPTIMONIUM_ORE.get());
+                output.accept(ModBlocks.DEEPSLATE_OPTIMONIUM_ORE.get());
     }) .build());
 
 
