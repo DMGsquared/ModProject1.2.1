@@ -1,6 +1,7 @@
 package net.DMG.mymod.block;
 
 import net.DMG.mymod.MyMod;
+import net.DMG.mymod.block.custom.MagicBlock;
 import net.DMG.mymod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -36,6 +37,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> DEEPSLATE_OPTIMONIUM_ORE = registerBlock("deepslate_optimonium_ore", ()-> new DropExperienceBlock(UniformInt.of(3,6),
             BlockBehaviour.Properties.of()
             .strength(2.5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
+    public static final RegistryObject<Block> OPTIMONIUM_BRICK = registerBlock("optimonium_brick", ()-> new Block(BlockBehaviour.Properties.of().strength(2.3f, 4)));
+
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block", ()-> new MagicBlock(BlockBehaviour.Properties.of().strength(2f,1000).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block){
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

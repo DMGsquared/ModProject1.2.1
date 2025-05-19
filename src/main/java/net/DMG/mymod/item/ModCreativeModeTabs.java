@@ -24,7 +24,17 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.OPTIMONIUM_BLOCK.get());
                 output.accept(ModBlocks.OPTIMONIUM_ORE.get());
                 output.accept(ModBlocks.DEEPSLATE_OPTIMONIUM_ORE.get());
+                output.accept(ModItems.CHISEL.get());
+                output.accept(ModBlocks.MAGIC_BLOCK.get());
     }) .build());
+
+    public static final RegistryObject<CreativeModeTab> MY_FOOD_TAB = CREATIVE_MODE_TABS.register("my_food_tab",
+            ()-> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.FRIED_EGG.get()))
+                    .withTabsBefore(MY_MOD_TAB.getId())
+                    .title(Component.translatable("creative.mymod.my_food"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.FRIED_EGG.get());
+                    }).build());
 
 
     public static void register (IEventBus eventBus){

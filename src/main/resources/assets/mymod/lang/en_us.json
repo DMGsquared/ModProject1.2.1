@@ -2,13 +2,16 @@
   "item.mymod.optimonium": "Optimonium",
   "item.mymod.unrefined_optimonium": "Unrefined Optimonium",
   "item.mymod.bigohdih": "Big Oh Dih",
-
+  "item.mymod.chisel": "Chisel",
+  "item.mymod.fried_egg": "Fried Egg",
 
   "block.mymod.optimonium_block": "Optimonium Block",
   "block.mymod.unrefined_optimonium_block": "Unrefined Optimonium Block",
   "block.mymod.deepslate_optimonium_ore": "Deepslate Optimonium Ore",
   "block.mymod.optimonium_ore": "Optimonium Ore",
+  "block.mymod.magic_block": "Magic Block",
 
 
-  "creative.mymod.my_mod": "Mod Items"
+  "creative.mymod.my_mod": "Mod Items",
+  "creative.mymod.my_food": "Mod Foods"
 }
