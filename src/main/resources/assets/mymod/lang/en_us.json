@@ -14,5 +14,11 @@
 
 
   "creative.mymod.my_mod": "Mod Items",
-  "creative.mymod.my_food": "Mod Foods"
+  "creative.mymod.my_food": "Mod Foods",
+
+  "tooltip.mymod.magic_block": "Can duplicate your Items, but don't get too greedy...",
+  "tooltip.mymod.chisel.shift_down": "The tool of a greater stoneworker.\nCreated by the §kBrazer Clan",
+  "tooltip.mymod.chisel.base": "Press §eShift§r for more information",
+  "tooltip.mymod.neutron_star": "Imbued with the power of the stars",
+  "tooltip.mymod.fried_egg": "Curiously tasty"
 }
