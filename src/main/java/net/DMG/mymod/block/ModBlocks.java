@@ -25,10 +25,10 @@ public class ModBlocks {
 
     public static final RegistryObject<Block> OPTIMONIUM_BLOCK = registerBlock("optimonium_block", () -> new Block(BlockBehaviour.Properties.of()
             .strength(4f,1200f).requiresCorrectToolForDrops()
-            .sound(SoundType.ANCIENT_DEBRIS)));
+            .sound(SoundType.DEEPSLATE)));
 
     public static final RegistryObject<Block> UNREFINED_OPTIMONIUM_BLOCK = registerBlock("unrefined_optimonium_block", () -> new Block(BlockBehaviour.Properties.of()
-            .strength(3f).requiresCorrectToolForDrops().sound(SoundType.BONE_BLOCK)));
+            .strength(3f).requiresCorrectToolForDrops().sound(SoundType.GRAVEL)));
 
     public static final RegistryObject<Block> OPTIMONIUM_ORE = registerBlock("optimonium_ore", ()-> new DropExperienceBlock(UniformInt.of(2,4),
             BlockBehaviour.Properties.of()

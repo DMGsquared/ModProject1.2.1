@@ -26,6 +26,7 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.DEEPSLATE_OPTIMONIUM_ORE.get());
                 output.accept(ModItems.CHISEL.get());
                 output.accept(ModBlocks.MAGIC_BLOCK.get());
+                output.accept(ModItems.NEUTRON_STAR.get());
     }) .build());
 
     public static final RegistryObject<CreativeModeTab> MY_FOOD_TAB = CREATIVE_MODE_TABS.register("my_food_tab",
