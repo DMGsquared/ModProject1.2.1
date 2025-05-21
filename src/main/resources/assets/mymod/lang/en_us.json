@@ -11,13 +11,26 @@
   "block.mymod.deepslate_optimonium_ore": "Deepslate Optimonium Ore",
   "block.mymod.optimonium_ore": "Optimonium Ore",
   "block.mymod.magic_block": "Magic Block",
+  "block.mymod.compressed_obsidian": "Compressed Obsidian",
+  "block.mymod.optimonium_stairs": "Optimonium Stairs",
+  "block.mymod.optimonium_slab": "Optimonium Slab",
+  "block.mymod.optimonium_pressure_plate": "Optimonium Pressure Plate",
+  "block.mymod.optimonium_button": "Optimonium Button",
+  "block.mymod.optimonium_fence": "Optimonium Fence",
+  "block.mymod.optimonium_fence_gate": "Optimonium Fence Gate",
+  "block.mymod.optimonium_wall": "Optimonium Wall",
+  "block.mymod.optimonium_door": "Optimonium Door",
+  "block.mymod.optimonium_trapdoor": "Optimonium Trapdoor",
 
 
-  "creative.mymod.my_mod": "Mod Items",
-  "creative.mymod.my_food": "Mod Foods",
+  "creative.mymod.mod_tab": "Mod Objects",
+  "creative.mymod.item_tab": "Mod Items",
+  "creative.mymod.block_tab": "Mod Blocks",
+  "creative.mymod.food_tab": "Mod Foods",
+
 
   "tooltip.mymod.magic_block": "Can duplicate your Items, but don't get too greedy...",
-  "tooltip.mymod.chisel.shift_down": "The tool of a greater stoneworker.\nCreated by the §kBrazer Clan",
+  "tooltip.mymod.chisel.shift_down": "The tool of a greater stoneworker.\nOnce only used by the §kBrazer§r Clan",
   "tooltip.mymod.chisel.base": "Press §eShift§r for more information",
   "tooltip.mymod.neutron_star": "Imbued with the power of the stars",
   "tooltip.mymod.fried_egg": "Curiously tasty"
