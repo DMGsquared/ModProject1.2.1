@@ -47,6 +47,8 @@ public class ModCreativeModeTabs {
 
                         output.accept(ModBlocks.OPTIMONIUM_DOOR.get());
                         output.accept(ModBlocks.OPTIMONIUM_TRAPDOOR.get());
+                        output.accept(ModBlocks.OPTIMONIUM_LAMP.get());
+
                     }).build());
 
     public static final RegistryObject<CreativeModeTab> FOOD_TAB = CREATIVE_MODE_TABS.register("food_tab",
@@ -82,6 +84,8 @@ public class ModCreativeModeTabs {
                 output.accept(ModBlocks.OPTIMONIUM_WALL.get());
                 output.accept(ModBlocks.OPTIMONIUM_DOOR.get());
                 output.accept(ModBlocks.OPTIMONIUM_TRAPDOOR.get());
+
+                output.accept(ModBlocks.OPTIMONIUM_LAMP.get());
 
             }) .build());
 

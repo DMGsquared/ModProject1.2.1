@@ -2,6 +2,7 @@ package net.DMG.mymod.block;
 
 import net.DMG.mymod.MyMod;
 import net.DMG.mymod.block.custom.MagicBlock;
+import net.DMG.mymod.block.custom.OptimoniumLampBlock;
 import net.DMG.mymod.item.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -15,6 +16,8 @@ import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
 
+import java.util.List;
+import java.util.Set;
 import java.util.function.Supplier;
 
 public class ModBlocks {
@@ -54,7 +57,7 @@ public class ModBlocks {
     public static final RegistryObject<PressurePlateBlock> OPTIMONIUM_PRESSURE_PLATE = registerBlock("optimonium_pressure_plate",
             ()-> new PressurePlateBlock(BlockSetType.IRON, BlockBehaviour.Properties.of().strength(2.5f, 1000f)));
     public static final RegistryObject<ButtonBlock> OPTIMONIUM_BUTTON = registerBlock("optimonium_button",
-            ()-> new ButtonBlock(BlockSetType.IRON, 20, BlockBehaviour.Properties.of()
+            ()-> new ButtonBlock(BlockSetType.IRON, 10, BlockBehaviour.Properties.of()
                     .strength(2.5f,1000f).noCollission().requiresCorrectToolForDrops()));
 
     public static final RegistryObject<FenceBlock> OPTIMONIUM_FENCE = registerBlock("optimonium_fence",
@@ -74,7 +77,8 @@ public class ModBlocks {
             ()-> new TrapDoorBlock(BlockSetType.CHERRY, BlockBehaviour.Properties.of()
                     .strength(2.5f,1000f).requiresCorrectToolForDrops().noOcclusion()));
 
-
+public static final RegistryObject<Block> OPTIMONIUM_LAMP = registerBlock("optimonium_lamp", ()-> new OptimoniumLampBlock((BlockBehaviour
+        .Properties.of().strength(3f).lightLevel(state -> state.getValue(OptimoniumLampBlock.CLICKED) ? 15: 0))));
 
 
 
@@ -87,6 +91,13 @@ public class ModBlocks {
     private static <T extends Block> void registerBlockItem(String name, RegistryObject<T> block){
         ModItems.ITEMS.register(name, () -> new BlockItem(block.get(), new Item.Properties()));
     }
+   /* private static void registerNonblocks (Set<String> set, String item, float strength, float blastResistance){
+        if (set.contains("stairs")){
+            public static final RegistryObject<StairBlock> item.concat("_STAIRS" = registerBlock("optimonium_stairs",
+                    ()-> new StairBlock(ModBlocks.OPTIMONIUM_BLOCK.get().defaultBlockState(), BlockBehaviour.Properties.of()
+                            .strength(2.5f, 1000f).requiresCorrectToolForDrops()));
+        }
+    }*/
 
     public static void register(IEventBus eventBus) {
         BLOCKS.register(eventBus);
